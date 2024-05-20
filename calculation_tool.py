@@ -1,12 +1,9 @@
 import tkinter as tk
 import pickle
-# import xgboost
 import numpy as np
 from PIL import ImageTk, Image
 
-
 def custom_quantize(number, n_digits=0):
-    """ 截断处理，不舍入 """
     number_lst = str(number).split(".")
     if n_digits > 0:
         if "." in str(number):
