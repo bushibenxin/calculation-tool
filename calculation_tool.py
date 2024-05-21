@@ -17,14 +17,14 @@ def custom_quantize(number, n_digits=0):
 def calculation():
     input_data = []
     input_data.append(float(entry_in_frame1.get()))
-    input_data.append(float(entry_in_frame2.get()))
     input_data.append(float(entry_in_frame3.get()))
-    input_data.append(float(entry_in_frame4.get()))
     input_data.append(float(entry_in_frame5.get()))
-    input_data.append(float(entry_in_frame6.get()))
     input_data.append(float(entry_in_frame7.get()))
-    input_data.append(float(entry_in_frame8.get()))
     input_data.append(float(entry_in_frame9.get()))
+    input_data.append(float(entry_in_frame2.get()))
+    input_data.append(float(entry_in_frame4.get()))
+    input_data.append(float(entry_in_frame6.get()))
+    input_data.append(float(entry_in_frame8.get()))
     input_data.append(float(entry_in_frame10.get()))
     c = np.array([input_data])
     y_scores = loaded_model.predict_proba(c)
